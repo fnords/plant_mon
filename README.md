@@ -2,9 +2,9 @@
 soil humidity monitoring for hackerplants
 
 ## Requirements
-* PLANTS
+* PLANTS!
 * SHT-10 sensors
-* 1 stk Raspberry Pi
+* a Raspberry Pi
 * a breadboard and some wires
 
 ## Wiring the Pi
