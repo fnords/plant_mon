@@ -1,7 +1,13 @@
-# plant_mon
+# plant monitoring
 soil humidity monitoring for hackerplants
 
-Wiring the Pi
+## Requirements
+* PLANTS
+* SHT-10 sensors
+* 1 stk Raspberry Pi
+* a breadboard and some wires
+
+## Wiring the Pi
 
 Wire | Pin #
 -----|------
