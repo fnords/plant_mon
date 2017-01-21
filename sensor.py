@@ -15,6 +15,10 @@ def main():
         print(sensor_one)
         mqtt("hackeriet/japonica/temperature", temp)
         mqtt("hackeriet/japonica/humidity", humidity)
+        f = open("japonica", "w")
+        f.write("%s\n" % str(temp))
+        f.write("%s\n" % str(humidity))
+        f.close()
         sleep(2)
 
     with SHT1x(18, 16, vdd="5V") as sensor_two:
@@ -23,6 +27,9 @@ def main():
         sensor_two.calculate_dew_point(temp, humidity)
         mqtt("hackeriet/elefantfot/temperature", temp)
         mqtt("hackeriet/elefantfot/humidity", humidity)
+        f = open("elephantfot", "w")
+        f.write("%s\n" % str(temp))
+        f.write("%s\n" % str(humidity))
         print(sensor_two)
         sleep(2)
 
