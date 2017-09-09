@@ -17,3 +17,5 @@ yellow (SCK) | 08 (GPIO14) and 16 (GPIO23)
 blue (DATA) | 12 (GPIO18) and 18 (GPIO24)
 
 Add a 10k resistor between VDD and DATA for each sensor
+
+There are also some Munin plugins, if you're into that sort of thing..
