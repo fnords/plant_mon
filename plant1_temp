@@ -1,0 +1,16 @@
+#!/bin/sh
+
+case $1 in
+   config)
+        cat <<'EOM'
+graph_title plant1 temperature
+graph_vlabel temperature
+plant1_temp.label temperature
+plant1_temp.info Temperature level for plant1
+
+EOM
+        exit 0;;
+esac
+
+printf "plant1_temp.value "
+cut -d',' -f1 /home/pi/plant_mon/plant1

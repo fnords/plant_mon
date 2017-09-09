@@ -1,0 +1,16 @@
+#!/bin/sh
+
+case $1 in
+   config)
+        cat <<'EOM'
+graph_title plant0 humidity
+graph_vlabel humidity
+plant0_hum.label humidity
+plant0_hum.info Humidity level for plant0
+
+EOM
+        exit 0;;
+esac
+
+printf "plant0_hum.value "
+cut -d',' -f2 /home/pi/plant_mon/plant0
